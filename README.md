@@ -1,2 +1,5 @@
 # learningRepository
-undergoing or completed learning projects
+
+## About
+
+Simply a personal repository filled with random projects.
