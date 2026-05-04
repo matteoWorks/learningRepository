@@ -2,7 +2,9 @@
 
 ## About
 
-Deep Q-Learning Project part of the AI A-Z 2026 Udemy Course.
+Deep Q-Learning Project part of the [AI A-Z 2026 Udemy Course](https://www.udemy.com/course/artificial-intelligence-az/?couponCode=MT260504JP). \
+The goal of this project is to train an agent to solve the Gymnasium [Lunar Lander](https://gymnasium.farama.org/environments/box2d/lunar_lander/) environment. \
+The final trained performance can be seen in `video.mp4`.
 
 ## Result
 
