@@ -8,7 +8,7 @@ The final trained performance can be seen in `video.mp4`.
 
 ## Result
 
-Due to limited local resources, the target score was reduced to a very low 175, leading to suboptimal results that can seen in `video.mp4`, despite this, the approach taken was correct. \
+Due to limited local resources, the target score was reduced to a very low 175, leading to suboptimal results that can be seen in `video.mp4`, despite this, the approach taken was correct. \
 \
 Output of the code execution:
 
