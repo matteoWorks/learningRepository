@@ -1,3 +1,63 @@
 [gd_scene format=3 uid="uid://bxnrlrk8rmcpj"]
 
+[ext_resource type="Texture2D" uid="uid://doghmovcgeltw" path="res://graphics/map.png" id="1_dbls1"]
+[ext_resource type="Script" uid="uid://cv8f6m4s3ra85" path="res://scene/game.gd" id="1_xwcet"]
+[ext_resource type="PackedScene" uid="uid://wi4capk88643" path="res://scene/player.tscn" id="2_33cqm"]
+[ext_resource type="PackedScene" uid="uid://oepqrrm3wyni" path="res://scene/tree.tscn" id="3_33cqm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s1fef"]
+size = Vector2(20, 680)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_khhxn"]
+size = Vector2(424, 20)
+
 [node name="Game" type="Node2D" unique_id=1588976736]
+script = ExtResource("1_xwcet")
+
+[node name="BG" type="Sprite2D" parent="." unique_id=440393748]
+texture = ExtResource("1_dbls1")
+
+[node name="Player" parent="." unique_id=836175905 instance=ExtResource("2_33cqm")]
+position = Vector2(25, 46)
+
+[node name="Tree" parent="." unique_id=2073527898 instance=ExtResource("3_33cqm")]
+position = Vector2(156, 221)
+
+[node name="Borders" type="Node2D" parent="." unique_id=104998222]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Borders" unique_id=1185971935]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/StaticBody2D" unique_id=360211479]
+position = Vector2(-202, 0)
+shape = SubResource("RectangleShape2D_s1fef")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="Borders" unique_id=553940003]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/StaticBody2D2" unique_id=59811135]
+position = Vector2(202, 0)
+shape = SubResource("RectangleShape2D_s1fef")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="Borders" unique_id=277552851]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/StaticBody2D3" unique_id=884396743]
+position = Vector2(0, -330)
+shape = SubResource("RectangleShape2D_khhxn")
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="Borders" unique_id=918609897]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/StaticBody2D4" unique_id=1409866109]
+position = Vector2(0, 330)
+shape = SubResource("RectangleShape2D_khhxn")
+
+[node name="FinishArea2D" type="Area2D" parent="Borders" unique_id=413467007]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Borders/FinishArea2D" unique_id=1273399156]
+polygon = PackedVector2Array(-192, -320, -192, -134, 192, -134, 192, -320)
+
+[node name="Timer" type="Node" parent="." unique_id=1735150448]
+
+[node name="CarTimer" type="Timer" parent="Timer" unique_id=591748297]
+wait_time = 4.0
+autostart = true
+
+[connection signal="body_entered" from="Borders/FinishArea2D" to="." method="_on_finish_area_2d_body_entered"]
