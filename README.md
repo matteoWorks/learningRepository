@@ -11,4 +11,4 @@ A personal repository for miscellaneous learning projects and experiments across
 ## Contents
 
 [AI A-Z 2026](https://github.com/matteoWorks/learningRepository/tree/main/AI%20A-Z%202026): AI-related learning Projects based on the homonymous [Udemy Course](https://www.udemy.com/course/artificial-intelligence-az/); \
-[Godot Introduction by ClearCode](https://github.com/matteoWorks/learningRepository/tree/main/Godot%20Introduction%20ClearCode): Godot-related learning Projects based on the ClearCode's [Youtube Course](https://www.youtube.com/watch?v=TLG2yVpLDT8) & [Udemy Course](https://www.udemy.com/course/learn-to-code-by-making-games-in-godot/).
+[Godot Introduction by ClearCode](https://github.com/matteoWorks/learningRepository/tree/main/Introduction%20to%20Godot%20by%20ClearCode): Godot-related learning Projects based on the ClearCode's [Youtube Course](https://www.youtube.com/watch?v=TLG2yVpLDT8) & [Udemy Course](https://www.udemy.com/course/learn-to-code-by-making-games-in-godot/).
