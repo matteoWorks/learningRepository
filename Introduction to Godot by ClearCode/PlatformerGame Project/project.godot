@@ -14,10 +14,10 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 
 [application]
 
-config/name="Platformer"
+config/name="PlatformerGame"
 run/main_scene="uid://djh3khl33k11"
 config/features=PackedStringArray("4.7", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="uid://otyoj5px7yk7"
 
 [display]
 
